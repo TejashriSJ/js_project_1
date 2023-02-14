@@ -10,4 +10,4 @@ for(let carIndex =0; carIndex< inventory.length ; carIndex++){
 
 }
 
-module.exports = problem1 
+module.exports = problem1; 
