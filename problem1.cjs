@@ -1,13 +1,19 @@
-function problem1(inventory){
+function problem1(inventory , searchId){
 
-for(let carIndex =0; carIndex< inventory.length ; carIndex++){
+
+if (! inventory || inventory.length === 0 || ! searchId || !(Array.isArray(inventory)) || !(Number.isInteger(searchId)) ){
+    return []
+}
+else{
+    for(let carIndex =0; carIndex< inventory.length ; carIndex++){
      
-    if (33 === inventory[carIndex].id){
-        return 'Car 33 is a '+ inventory[carIndex].car_year + ' ' +inventory[carIndex].car_make +' '+ inventory[carIndex].car_model;
+        if (searchId === inventory[carIndex].id){
+            return inventory[carIndex]
+            
+        }
+    
     }
-
 }
 
 }
-
 module.exports = problem1; 
