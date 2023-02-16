@@ -1,14 +1,27 @@
-let olderCars=[]
-let olderCarIndex=0
+let problem4 = require('./problem4.cjs');
 
-function problem5(inventory,years){
-    for (let index=0; index<years.length ; index++){
-        if (years[index]<2000){
-            olderCars[olderCarIndex] = inventory[index].car_model
-            olderCarIndex+=1
-        }
+
+
+function problem5(inventory){
+
+    let olderCars=[]
+    if (! inventory || inventory.length === 0 || !(Array.isArray(inventory))){
+        return [];
     }
-return("Old cars : \n " + olderCars+ "\n\n Total: " + olderCars.length +" cars")
+    else{
+        let years = problem4(inventory);
+        for (let index=0; index<years.length ; index++){
+            if (years[index]<2000){
+                olderCars.push(inventory[index].car_model) 
+                
+            }
+        }
+        
+        console.log(olderCars.length )
+        return olderCars
+    }
+ 
+
     
 }
 module.exports = problem5

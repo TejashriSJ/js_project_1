@@ -51,6 +51,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
+/*
 searchId = 33;
 // when no inventory is given
 console.log(problem1());
@@ -61,7 +62,7 @@ console.log(problem1(inventory));
 // when the correct inventory and id is given
 const result = problem1(inventory , searchId);
 console.log(result)
-console.log( 'Car ' + result["id"] + ' is a '+ result["car_year"] + ' ' +  result["car_make"] + ' ' + result["car_model"] );
+
 // when the inventory is not array
 const result2 = problem1(new String("hello"), 33)
 console.log(result2)
@@ -71,5 +72,11 @@ console.log(result3)
 // when the id is not a number
 const result4 = problem1(inventory , []);
 console.log(result4)
+*/
+
+const result5 = problem1([{"id":0,"car_make":"Dodge","car_model":"Magnum","car_year":2008}], 0)
+console.log(result5)
+
+
 
 

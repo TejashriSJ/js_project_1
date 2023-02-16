@@ -1,13 +1,18 @@
 function problem4(inventory){
 
-    let years=[];
+    if (! inventory || inventory.length === 0 || !(Array.isArray(inventory)) ){
+        return [];
+    }
+    else{
+        let years=[];
 
-    for(let index =0; index< inventory.length ; index++){
-
-            years[index]= inventory[index].car_year;
-        }
+        for(let index =0; index< inventory.length ; index++){
     
-    return years;
+                years[index]= inventory[index].car_year;
+            }
+        
+        return years;
+    }
     }
     
     module.exports = problem4;
