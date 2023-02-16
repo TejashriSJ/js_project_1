@@ -8,6 +8,7 @@ else{
     for(let carIndex =0; carIndex< inventory.length ; carIndex++){
      
         if (searchId === inventory[carIndex].id){
+            console.log( 'Car ' + searchId + ' is a '+ inventory[carIndex]["car_year"] + ' ' +  inventory[carIndex]["car_make"] + ' ' + inventory[carIndex]["car_model"] );
             return inventory[carIndex]
             
         }
