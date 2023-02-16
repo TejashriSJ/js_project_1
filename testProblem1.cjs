@@ -51,7 +51,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
-/*
+
 searchId = 33;
 // when no inventory is given
 console.log(problem1());
@@ -69,10 +69,9 @@ console.log(result2)
 
 const result3 = problem1({id: 33, name: "Test", length: 10}, 33)
 console.log(result3)
-// when the id is not a number
+// when the id is not a number.
 const result4 = problem1(inventory , []);
 console.log(result4)
-*/
 
 const result5 = problem1([{"id":0,"car_make":"Dodge","car_model":"Magnum","car_year":2008}], 0)
 console.log(result5)
